@@ -87,24 +87,50 @@
 //     }
 
 
-use std::io;
-fn main() {
-    let mut input = String::new();
-    io::stdin().read_line(&mut input);
-    let mut input = String::new();
-    io::stdin().read_line(&mut input);
-    // let input = input.trim().parse().unwrap();
+// use std::io;
+// fn main() {
+//     let mut input = String::new();
+//     io::stdin().read_line(&mut input);
+//     let mut input = String::new();
+//     io::stdin().read_line(&mut input);
+//     // let input = input.trim().parse().unwrap();
     
-    let mut emptyvec = vec![];
-    for i in input.split_whitespace(){
-    let x : i32 = i.parse().unwrap();
-emptyvec.push(x);
-    // println!("{}",i );
-    }
-    for i in emptyvec.iter().rev(){
-print!("{} ",i);
+//     let mut emptyvec = vec![];
+//     for i in input.split_whitespace(){
+//     let x : i32 = i.parse().unwrap();
+// emptyvec.push(x);
+//     // println!("{}",i );
+//     }
+//     for i in emptyvec.iter().rev(){
+// print!("{} ",i);
+//     }
+// }
+
+
+
+// use std::io;
+// fn main() {
+// 	let mut a=String::new();
+// 	println!("Enter the String");
+// 	io::stdin().read_line(&mut a).expect("incorrect entry");
+//     a=a.trim().to_string();
+	
+
+// 	let mut b=String::new();
+// 	println!("How many copies of String you need");
+// 	io::stdin().read_line(&mut b).expect("incorrect entry");
+// 	let b:i32=b.trim().parse().unwrap();
+//     for i in 0..b{
+//         print!("{}",a);
+//     }
+
+// }
+
+
+fn main(){
+    let name = ["haris","ahmad","saad"];
+    let age = [12,13,14];
+    for i in 0..name.len(){
+    println!("{} : {}",name[i],age[i]);
     }
 }
-
-
-
