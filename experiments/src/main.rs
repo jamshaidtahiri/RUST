@@ -134,36 +134,41 @@
 //     println!("{} : {}",name[i],age[i]);
 //     }
 // }
-use std::io;
-#[derive(Debug)]
-struct USER {
-    username: String,
-    password: String,
-}
-fn main(){
-let user =USER{
-    username: String::from("jamshaidtahiri"),
-    password: String::from("pass"),
-};
-println!("{:?}",user);
-
-
-let user1 = register();
-println!("{:?}",user1);
-
-}
-fn register () -> USER{
-    let mut username = String::new();
-    let mut password = String::new();
-    io::stdin().read_line(&mut username);
-    io::stdin().read_line(&mut password);
-    username = username.trim().to_string();
-    password = password.trim().to_string();
 
 
 
-    USER{
-username,
-password,
-    }
-}
+
+
+// use std::io;
+// #[derive(Debug)]
+// struct USER {
+//     username: String,
+//     password: String,
+// }
+// fn main(){
+// let user =USER{
+//     username: String::from("jamshaidtahiri"),
+//     password: String::from("pass"),
+// };
+// println!("{:?}",user);
+
+
+// let user1 = register();
+// println!("{:?}",user1);
+
+// }
+// fn register () -> USER{
+//     let mut username = String::new();
+//     let mut password = String::new();
+//     io::stdin().read_line(&mut username);
+//     io::stdin().read_line(&mut password);
+//     username = username.trim().to_string();
+//     password = password.trim().to_string();
+
+
+
+//     USER{
+// username,
+// password,
+//     }
+// }
