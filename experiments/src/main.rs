@@ -141,10 +141,13 @@ struct USER {
     password: String,
 }
 fn main(){
-// let user1 =USER{
-//     username: String::from("jamshaidtahiri"),
-//     password: String::from("pass"),
-// };
+let user =USER{
+    username: String::from("jamshaidtahiri"),
+    password: String::from("pass"),
+};
+println!("{:?}",user);
+
+
 let user1 = register();
 println!("{:?}",user1);
 
