@@ -173,4 +173,17 @@
 //     }
 // }
 
-//
+// use std::io;
+// fn main(){
+//     // let int = String::new();
+//     let mut input =String::new();
+//     io::stdin().read_line(&mut input);
+
+//     let mut anyvec = vec![];
+//     for i in input.split_whitespace(){
+//         let num :i32  = i.parse().unwrap();
+//         anyvec.push(num);
+//         // println!("{}",i);
+//     }
+//     println!("{:?}",anyvec);
+// }
