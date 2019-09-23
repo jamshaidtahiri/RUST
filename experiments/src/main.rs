@@ -189,28 +189,28 @@
 // }
 
 
-use std::io;
-fn main() {
-    let mut input = String::new();
-    io::stdin().read_line(&mut input);
-    // let mut input = input.trim();
-let mut anyvec = vec![];
-let mut vector : Vec<i32> = vec![];
+// use std::io;
+// fn main() {
+//     let mut input = String::new();
+//     io::stdin().read_line(&mut input);
+//     // let mut input = input.trim();
+// let mut anyvec = vec![];
+// let mut vector : Vec<i32> = vec![];
 
-    for i in 0..input.len(){
-        let num = &input[i..i+1];
-        if num == " "{
-            let n = anyvec.join("");
-            let n:i32 = n.parse().unwrap();
-            vector.push(n);
-            for i in 0..anyvec.len(){
-                anyvec.pop();
-            }            
+//     for i in 0..input.len(){
+//         let num = &input[i..i+1];
+//         if num == " "{
+//             let n = anyvec.join("");
+//             let n:i32 = n.parse().unwrap();
+//             vector.push(n);
+//             for i in 0..anyvec.len(){
+//                 anyvec.pop();
+//             }            
 
-        }else {
-            anyvec.push(num);
-        }
+//         }else {
+//             anyvec.push(num);
+//         }
         
-    }
-println!("{:?}",vector);
-}
+//     }
+// println!("{:?}",vector);
+// }
