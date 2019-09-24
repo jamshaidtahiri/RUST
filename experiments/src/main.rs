@@ -214,24 +214,60 @@
 //     }
 // println!("{:?}",vector);
 // }
-#[derive(Debug,Clone)]
+
+
+
+
+
+
+
+// #[derive(Debug,Clone)]
+// struct User {
+//     username: String,
+//     email: String,
+//     sign_in_count: u64,
+//     active: bool,
+// }
+//  fn main(){
+//      let mut user1 = User {
+//     email: String::from("jamshaid"),
+//     username: String::from("someusername123"),
+//     active: true,
+//     sign_in_count: 1,
+// };
+// // user1.email=String::from("ndkxm;mf;fm");
+// let user2 =User{
+// ..user1.clone()
+// };
+// println!("user info : {:?}",user1);
+// println!("user2 info : {:?}",user2);
+//  }
+
+
+
+
+
+
+
+#[macro_use]
+extern crate text_io;
+
+#[derive(Debug)]
 struct User {
-    username: String,
-    email: String,
-    sign_in_count: u64,
-    active: bool,
+    username : String,
+    password : String,    
 }
- fn main(){
-     let mut user1 = User {
-    email: String::from("jamshaid"),
-    username: String::from("someusername123"),
-    active: true,
-    sign_in_count: 1,
-};
-// user1.email=String::from("ndkxm;mf;fm");
-let user2 =User{
-..user1.clone()
-};
-println!("user info : {:?}",user1);
-println!("user2 info : {:?}",user2);
- }
+
+fn main() {
+    let username : String = read!();
+    let password: String = read!();
+
+    print!("{:?}",user(username, password) );
+}
+
+fn user (username: String,password:String)-> User{
+    User{
+        username,
+        password,
+    }
+}
