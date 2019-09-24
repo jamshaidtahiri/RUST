@@ -214,3 +214,24 @@
 //     }
 // println!("{:?}",vector);
 // }
+#[derive(Debug,Clone)]
+struct User {
+    username: String,
+    email: String,
+    sign_in_count: u64,
+    active: bool,
+}
+ fn main(){
+     let mut user1 = User {
+    email: String::from("jamshaid"),
+    username: String::from("someusername123"),
+    active: true,
+    sign_in_count: 1,
+};
+// user1.email=String::from("ndkxm;mf;fm");
+let user2 =User{
+..user1.clone()
+};
+println!("user info : {:?}",user1);
+println!("user2 info : {:?}",user2);
+ }
