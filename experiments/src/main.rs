@@ -190,7 +190,7 @@
 
 
 // use std::io;
-// fn main() {
+// fn main() {re starting in Islamabad this Sunday. The 
 //     let mut input = String::new();
 //     io::stdin().read_line(&mut input);
 //     // let mut input = input.trim();
@@ -249,25 +249,34 @@
 
 
 
-#[macro_use]
-extern crate text_io;
+// #[macro_use]
+// extern crate text_io;
 
-#[derive(Debug)]
-struct User {
-    username : String,
-    password : String,    
-}
+// #[derive(Debug)]
+// struct User {
+//     username : String,
+//     password : String,    
+// }
 
-fn main() {
-    let username : String = read!();
-    let password: String = read!();
+// fn main() {
+//     let username : String = read!();
+//     let password: String = read!();
 
-    print!("{:?}",user(username, password) );
-}
+//     print!("{:?}",user(username, password) );
+// }
 
-fn user (username: String,password:String)-> User{
-    User{
-        username,
-        password,
-    }
-}
+// fn user (username: String,password:String)-> User{
+//     User{
+//         username,
+//         password,
+//     }
+// }
+
+
+
+
+
+
+
+
+
