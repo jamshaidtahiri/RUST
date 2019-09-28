@@ -273,6 +273,34 @@
 // }
 
 
+#[derive(Debug)]
+enum User {
+    Player {
+    first_name: (String),
+    last_name: (String),
+    }
+}
+
+impl crate::User {
+    fn full_name(&self) -> String {
+        match self{
+            User::Player{first_name,last_name} => format!("{}",first_name),
+            _ => "error".to_string(),
+        }
+        // let User::Player{first_name,last_name}
+        // format!("{} {}", self.first_name, self.last_name)
+    }
+}
+
+fn main() {
+    let player_1 = User::Player {
+        first_name: "Rafael".to_string(),
+        last_name: "Nadal".to_string(),
+    };
+
+    println!("Player 01: {:#?}", player_1.full_name());
+}
+
 
 
 
