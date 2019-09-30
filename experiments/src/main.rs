@@ -79,7 +79,7 @@
 //      new_vector.push(my_vector);
 //     }
      
-//     for i in new_vector.iter(){
+//     for i in new_vector.iter(){isalnum
         
 //     println!("The vector value is: {}",i);
     
@@ -273,35 +273,55 @@
 // }
 
 
+// #[derive(Debug)]
+// enum User {
+//     Player {
+//     first_name: (String),
+//     last_name: (String),
+//     }
+// }
+
+// impl crate::User {
+//     fn full_name(&self) -> String {
+//         match self{
+//             User::Player{first_name,last_name} => format!("first_name:{}, last_name: {}",first_name,last_name),
+//             // _ => "error".to_string(),
+//         }
+//         // let User::Player{first_name,last_name}
+//         // format!("{} {}", self.first_name, self.last_name)
+//     }
+// }
+
+// fn main() {
+//     let player_1 = User::Player {
+//         first_name: "Rafael".to_string(),
+//         last_name: "Nadal".to_string(),
+//     };
+
+//     println!("Player 01: {:#?}", player_1.full_name());
+// }
+
+
+
+
+
 #[derive(Debug)]
-enum User {
-    Player {
-    first_name: (String),
-    last_name: (String),
-    }
+enum Message{
+	Quit,
+	Move{x:i32,y:u8},
+	Write(String),
+	ChangeColor(i32,i32,i32),
 }
-
-impl crate::User {
-    fn full_name(&self) -> String {
-        match self{
-            User::Player{first_name,last_name} => format!("{}",first_name),
-            _ => "error".to_string(),
-        }
-        // let User::Player{first_name,last_name}
-        // format!("{} {}", self.first_name, self.last_name)
-    }
+fn main(){
+	impl Message{
+		fn call(&self){
+			self.Move.x*self.Move.y
+		}
+	}
+	let m=Message::Move{x:10,y:10};
+	m.call();
+	println!("{:?}",m );
 }
-
-fn main() {
-    let player_1 = User::Player {
-        first_name: "Rafael".to_string(),
-        last_name: "Nadal".to_string(),
-    };
-
-    println!("Player 01: {:#?}", player_1.full_name());
-}
-
-
 
 
 
