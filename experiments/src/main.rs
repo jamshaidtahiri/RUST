@@ -305,24 +305,44 @@
 
 
 
-#[derive(Debug)]
-enum Message{
-	Quit,
-	Move{x:i32,y:u8},
-	Write(String),
-	ChangeColor(i32,i32,i32),
-}
-fn main(){
-	impl Message{
-		fn call(&self){
-			self.Move.x*self.Move.y
-		}
-	}
-	let m=Message::Move{x:10,y:10};
-	m.call();
-	println!("{:?}",m );
+// #[derive(Debug)]
+// enum Message{
+// 	Quit,
+// 	Move{x:i32,y:u8},
+// 	Write(String),
+// 	ChangeColor(i32,i32,i32),
+// }
+// fn main(){
+// 	impl Message{
+// 		fn call(&self){
+// 			self.Move.x*self.Move.y
+// 		}
+// 	}
+// 	let m=Message::Move{x:10,y:10};
+// 	m.call();
+// 	println!("{:?}",m );
+// }
+
+
+
+
+
+fn main() {
+	print!("{}",first_word(&"hello world".to_string()));
 }
 
+fn first_word(s: &String) -> usize {
+    let bytes = s.as_bytes();
+	print!("{:?}",bytes);
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return i;
+        }
+    }
+
+    s.len()
+}
 
 
 
