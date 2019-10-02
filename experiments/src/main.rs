@@ -327,24 +327,64 @@
 
 
 
+// fn main() {
+// 	print!("{}",first_word(&"hello world".to_string()));
+// }
+
+// fn first_word(s: &String) -> usize {
+//     let bytes = s.as_bytes();
+// 	print!("{:?}",bytes);
+
+//     for (i, &item) in bytes.iter().enumerate() {
+//         if item == b' ' {
+//             return i;
+//         }
+//     }
+
+//     s.len()
+// }
+
+
+
+#[derive(Debug)]
+
+ struct Student {
+
+ Name: String,
+
+ Grade: String,
+
+ Age: i8,
+
+ Percentage: f32,
+
+ }
+
+impl Student {
+
+fn new() -> Student {
+
+Student {Name: String::from("Ghufran"), Grade: String::from("A"), Age: 27, Percentage: 74.9}
+
+}
+
+fn PercentageShower(&self) -> f32 {
+
+       self.Percentage
+
+}
+
+}  
+
 fn main() {
-	print!("{}",first_word(&"hello world".to_string()));
+
+    let studentdetails =  Student::new();
+
+    println!("{:#?}",studentdetails); 
+
+    println!("Percentage is {}",studentdetails.PercentageShower());
+
 }
-
-fn first_word(s: &String) -> usize {
-    let bytes = s.as_bytes();
-	print!("{:?}",bytes);
-
-    for (i, &item) in bytes.iter().enumerate() {
-        if item == b' ' {
-            return i;
-        }
-    }
-
-    s.len()
-}
-
-
 
 
 
