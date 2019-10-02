@@ -305,25 +305,6 @@
 
 
 
-// #[derive(Debug)]
-// enum Message{
-// 	Quit,
-// 	Move{x:i32,y:u8},
-// 	Write(String),
-// 	ChangeColor(i32,i32,i32),
-// }
-// fn main(){
-// 	impl Message{
-// 		fn call(&self){
-// 			self.Move.x*self.Move.y
-// 		}
-// 	}
-// 	let m=Message::Move{x:10,y:10};
-// 	m.call();
-// 	println!("{:?}",m );
-// }
-
-
 
 
 
@@ -346,45 +327,125 @@
 
 
 
-#[derive(Debug)]
+// #[derive(Debug)]
 
- struct Student {
+//  struct Student {
 
- Name: String,
+//  Name: String,
 
- Grade: String,
+//  Grade: String,
 
- Age: i8,
+//  Age: i8,
 
- Percentage: f32,
+//  Percentage: f32,
+// #[derive(Debug)]
 
- }
+//  struct Student {
 
-impl Student {
+//  Name: String,
 
-fn new() -> Student {
+//  Grade: String,
 
-Student {Name: String::from("Ghufran"), Grade: String::from("A"), Age: 27, Percentage: 74.9}
+//  Age: i8,
 
+//  Percentage: f32,
+
+//  }
+
+// impl Student {
+
+// fn new() -> Student {
+
+// Student {Name: String::from("Ghufran"), Grade: String::from("A"), Age: 27, Percentage: 74.9}
+
+// }
+
+// fn PercentageShower(&self) -> f32 {
+
+//        self.Percentage
+
+// }
+
+// }  
+
+// fn main() {
+
+//     let studentdetails =  Student::new();
+
+//     println!("{:#?}",studentdetails); 
+
+//     println!("Percentage is {}",studentdetails.PercentageShower());
+
+// }
+
+//  }
+
+// impl Student {
+
+// fn new() -> Student {
+
+// Student {Name: String::from("Ghufran"), Grade: String::from("A"), Age: 27, Percentage: 74.9}
+
+// }
+
+// fn PercentageShower(&self) -> f32 {
+
+//        self.Percentage
+
+// }
+
+// }  
+
+// fn main() {
+
+//     let studentdetails =  Student::new();
+
+//     println!("{:#?}",studentdetails); 
+
+//     println!("Percentage is {}",studentdetails.PercentageShower());
+
+// }
+
+
+
+// #[derive(Debug)]
+// enum Message{
+// 	Quit,
+// 	Move{x:i32,y:u8},
+// 	Write(String),
+// 	ChangeColor(i32,i32,i32),
+// }
+// fn main(){
+// 	impl Message{
+// 		fn call(&self){
+
+//             match self {
+//                 Message::Move{x,y} => print!("{}",((*x as u8)*y)),
+//                 _ => print!("nothing"),
+//             }
+
+// 			// self.move.x*self.move.y
+// 		}
+// 	}
+// 	let m=Message::Move{x:10,y:10};
+// 	m.call();
+// 	// println!("{:?}",m );
+// }
+
+
+
+
+use std::ops::Add;
+fn main(){
+
+let x: i8 = 5;
+
+impl Add for std::option::Option<i8> {
+    // add code here
 }
+let y: Option<i8> = Some(5);
 
-fn PercentageShower(&self) -> f32 {
 
-       self.Percentage
 
+let sum = x + y;
 }
-
-}  
-
-fn main() {
-
-    let studentdetails =  Student::new();
-
-    println!("{:#?}",studentdetails); 
-
-    println!("Percentage is {}",studentdetails.PercentageShower());
-
-}
-
-
-
