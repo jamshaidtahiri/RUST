@@ -432,20 +432,19 @@
 // 	// println!("{:?}",m );
 // }
 
+use std::time::{Duration, Instant};
+use std::thread;
 
-
-
-use std::ops::Add;
 fn main(){
+    let start = Instant::now();
+let array= [0,1,2,3,4,5,6,7,8,9,10,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,32,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3];
 
-let x: i8 = 5;
-
-impl Add for std::option::Option<i8> {
-    // add code here
+for i in 0..array.len(){
+    if array[i] == 0{
+        print!("found");
+        break
+    }
 }
-let y: Option<i8> = Some(5);
-
-
-
-let sum = x + y;
+let duration = start.elapsed();
+  println!("Time elapsed in expensive_function() is: {:?}", duration);
 }
