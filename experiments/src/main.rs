@@ -432,19 +432,51 @@
 // 	// println!("{:?}",m );
 // }
 
-use std::time::{Duration, Instant};
-use std::thread;
+// use std::time::{Duration, Instant};
+// use std::thread;
 
+// fn main(){
+//     let start = Instant::now();
+// let array= [0,1,2,3,4,5,6,7,8,9,10,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,32,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3];
+
+// for i in 0..array.len(){
+//     if array[i] == 0{
+//         print!("found");
+//         break
+//     }
+// }
+// let duration = start.elapsed();
+//   println!("Time elapsed in expensive_function() is: {:?}", duration);
+// }
+
+
+
+// crate text_io;
+// fn main() {
+
+    
+// }
+
+
+use std::io;
 fn main(){
-    let start = Instant::now();
-let array= [0,1,2,3,4,5,6,7,8,9,10,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,32,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3];
+    let mut my_string = String::new();
+    println!("Enter a number : {}",my_string);
+    io::stdin().read_line(&mut my_string); 
+    my_string = my_string.trim().to_string();
 
-for i in 0..array.len(){
-    if array[i] == 0{
-        print!("found");
-        break
+    let mut sum = 0;
+    for i in 0..my_string.len(){
+        let x : i32 = my_string[i..i+1].parse().unwrap();
+        sum = sum + x;
     }
+    println!("{}",sum);
 }
-let duration = start.elapsed();
-  println!("Time elapsed in expensive_function() is: {:?}", duration);
-}
+
+
+
+
+
+
+
+
