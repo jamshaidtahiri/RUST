@@ -458,25 +458,188 @@
 // }
 
 
-use std::io;
-fn main(){
-    let mut my_string = String::new();
-    println!("Enter a number : {}",my_string);
-    io::stdin().read_line(&mut my_string); 
-    my_string = my_string.trim().to_string();
+// use std::io;
+// fn main(){
+//     let mut my_string = String::new();
+//     println!("Enter a number : {}",my_string);
+//     io::stdin().read_line(&mut my_string); 
+//     my_string = my_string.trim().to_string();
 
-    let mut sum = 0;
-    for i in 0..my_string.len(){
-        let x : i32 = my_string[i..i+1].parse().unwrap();
-        sum = sum + x;
+//     let mut sum = 0;
+//     for i in 0..my_string.len(){
+//         let x : i32 = my_string[i..i+1].parse().unwrap();
+//         sum = sum + x;
+//     }
+//     println!("{}",sum);
+// }
+
+
+
+
+
+// #[derive(Debug,Clone)]
+// struct User{
+//     username: String,
+//     email: String,
+//     age : i8,
+//     single  : bool,
+// }
+
+// impl User {
+//     fn user(&mut self) -> String{
+//     //    self.username = "awais".to_string();
+//     self.username.to_string()
+//     }
+
+//     fn user_name(info:User)->String{
+//         info.username.to_string()
+//     }
+// }
+
+// fn main(){
+
+//     let mut user1 = User{
+//         username : "jamshaid".to_string(),
+//         email : " jamsdf".to_string(),
+//         age : 20,
+//         single : true,
+
+//     };
+
+    
+
+   
+
+//     println!("{}",user1.user());
+//      println!("{}",User::user_name(user1));
+//     // print!("{:?}",user2);
+
+
+// }
+
+
+
+
+fn main(){
+
+let pi = String::from("314159265358979323846264338327950288419716");
+let fav_arr = ["31","6535","41592","323846264338327950288419716"];
+
+let mut ivec=vec![];
+let mut jvec = vec![];
+
+let str_len = pi.len();
+for i in 0..str_len{
+    for j in i..str_len+1{
+        let m=&pi[i..j] ;
+        for &k in fav_arr.iter(){
+            if m == k{
+                ivec.push(i);
+                jvec.push(j-1);
+            }
+        }
     }
-    println!("{}",sum);
+}
+
+print!("{:?}\n{:?}",ivec,jvec );
+
+let mut anyvec = vec![];
+for i in 0..4{
+    let m =ivec[i];
+    let n = jvec[i];
+    anyvec.push(&pi[m..n+1])
+}
+
+print!("{:?}",anyvec );
+
 }
 
 
+// use std::io;
+// fn main(){
+
+//     let mut input = String::new();
+//     let mut target = String::new();
+
+//     io::stdin().read_line(&mut input);
+//     io::stdin().read_line(&mut target);
+//     let input = input.trim();
+//     let target = target.trim().parse().unwrap();
+    
+//     let mut anyvec = vec![];
+
+//     for i in input.split_whitespace(){
+//         let x : i32 = i.parse().unwrap();
+//         anyvec.push(x);
+//     }
+
+//     // let x = [1,2,3,4,5];
+//     // let target = 6;
+//     print!("{:?}",solve(&anyvec, target));
+// }
+//     fn solve(x:&[i32],target:i32)->(&i32,&i32){
+//         let mut anyvec = vec![];
+
+    
+// let mut c=0;
+//     for i in x.iter(){
+//         if c>0{
+//             break}
+//         for j in x.iter(){
+
+//             if c>0{
+//             break
+//             }
+
+//             if i+j == target{
+//                 let m=i;
+//                 let n=j;
+//                 anyvec.push(m);
+//                 anyvec.push(n);
+//                 c+=1;
+//                 break
+//             }
+//         }
+//         }
+    
+//     // print!("{:?}", anyvec);
+//     (anyvec[0],anyvec[1])
+    
+    
+    
+// }
 
 
 
+// use std::io;
+// struct Person{
+//     name : String,
+//     age : String,
+//     country : String,
+// }
+
+// fn main(){
+//     let mut name = String::new();
+//     let mut age = String::new();
+//     let mut country = String::new();
+
+//     io::stdin().read_line(&mut name);
+//     io::stdin().read_line(&mut age);
+//     io::stdin().read_line(&mut country);
+
+//     let name = name.trim().to_string();
+//     let age = age.trim().to_string();
+//     let country = country.trim().to_string();
+
+//     let person1 = Person{
+//         name : name,
+//         age : age,
+//         country : country,
+//     };
+
+//     let array = [person1.name,person1.age,person1.country];
+
+//     println!("{:?}",array);
 
 
-
+// }
