@@ -21,6 +21,7 @@ let mut sww = remove_whitespace(&mut input);
 
 
 split_string(&mut sww, &mut string1, &mut string2, &mut character);
+
 // print!("{},{}",string1,string2 );
 let result : f64 = 
 match character.as_str() {
