@@ -523,7 +523,7 @@
 fn main(){
 
 let pi = String::from("314159265358979323846264338327950288419716");
-let fav_arr = ["31","6535","41592","323846264338327950288419716"];
+let fav_arr = ["141","6535","592","3238462643","327950288419716"];
 
 let mut ivec=vec![];
 let mut jvec = vec![];
@@ -535,22 +535,43 @@ for i in 0..str_len{
         for &k in fav_arr.iter(){
             if m == k{
                 ivec.push(i);
-                jvec.push(j-1);
-            }
+                jvec.push(j);
+               }
         }
     }
 }
 
-print!("{:?}\n{:?}",ivec,jvec );
-
+println!("{:?}\n{:?}",ivec,jvec );
+let k = 0;
 let mut anyvec = vec![];
-for i in 0..4{
-    let m =ivec[i];
-    let n = jvec[i];
-    anyvec.push(&pi[m..n+1])
-}
+for i in 0..ivec.len(){
+    // let m =ivec[i];
+    // let n = jvec[i];
+    if i == 0{
+    let k = 0;
 
-print!("{:?}",anyvec );
+    if ivec[i]-0 > 0{
+        anyvec.push(&pi[0..ivec[i]]);
+    }
+
+    }
+    else {
+       let k = jvec[i-1];
+       if ivec[i] as i32-k as i32 > 0{
+        anyvec.push(&pi[jvec[i-1]..ivec[i]]);
+    }
+    }
+
+    
+
+    anyvec.push(&pi[ivec[i]..jvec[i]]);
+    anyvec.push(" ");
+}
+    
+
+
+println!("{:?}",anyvec );
+println!("{:?}",anyvec.join(""));
 
 }
 
