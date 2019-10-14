@@ -660,3 +660,30 @@
 //     println!("\n{}",sum);
 
 // }
+
+
+
+
+
+
+
+
+
+
+fn main(){
+
+// let name = String::from("hello");
+
+struct String{
+    vec : Vec<&u8>
+}
+
+impl String{
+
+}
+
+let name = String{
+    vec : vec!["h".as_bytes(),"e".as_bytes(),"l".as_bytes(),"l".as_bytes(),"o".as_bytes()],
+};
+
+}

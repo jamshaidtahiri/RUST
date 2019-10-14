@@ -1,0 +1,1 @@
+{"rustc":10683586082858123265,"features":"[]","target":11476812793263351689,"profile":1647870076477133176,"path":1036222786711178230,"deps":[[10341102463194625218,"reqwest",false,16413599455365254686]],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/Weatherapi-7283969ead24e5d3/dep-test-bin-Weatherapi-7283969ead24e5d3"}}],"rustflags":[],"metadata":3864119716059283448}
