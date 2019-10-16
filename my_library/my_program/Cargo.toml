@@ -8,3 +8,4 @@ edition = "2018"
 
 [dependencies]
 my_lib = {path = "../my_lib"}
+text_io = "0.1.7"
