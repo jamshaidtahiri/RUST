@@ -1,4 +1,5 @@
 # RUST
 # RUST
-hello
-.
+
+
+MY RUST CODE REPO TO PRACTICE CODING
