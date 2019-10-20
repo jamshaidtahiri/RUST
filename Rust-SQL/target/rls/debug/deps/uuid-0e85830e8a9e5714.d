@@ -1,0 +1,14 @@
+/home/mrmjt/Desktop/RUST/Rust-SQL/target/rls/debug/deps/uuid-0e85830e8a9e5714.rmeta: /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/lib.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/adapter/mod.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/adapter/core_support/mod.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/builder.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/parser/mod.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/parser/core_support.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/parser/std_support.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/prelude.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/core_support.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/std_support.rs
+
+/home/mrmjt/Desktop/RUST/Rust-SQL/target/rls/debug/deps/uuid-0e85830e8a9e5714.d: /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/lib.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/adapter/mod.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/adapter/core_support/mod.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/builder.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/parser/mod.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/parser/core_support.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/parser/std_support.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/prelude.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/core_support.rs /home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/std_support.rs
+
+/home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/lib.rs:
+/home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/adapter/mod.rs:
+/home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/adapter/core_support/mod.rs:
+/home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/builder.rs:
+/home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/parser/mod.rs:
+/home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/parser/core_support.rs:
+/home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/parser/std_support.rs:
+/home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/prelude.rs:
+/home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/core_support.rs:
+/home/mrmjt/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.7.4/src/std_support.rs:
