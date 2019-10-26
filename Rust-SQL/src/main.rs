@@ -27,7 +27,7 @@ fn main() {
 //                      )", ()).unwrap();
 
     let students = vec![
-        Student { name: Some("2".into()), email: Some("emai".into()) ,age:Some("23".into()) }];
+        Student { name: Some("haris".into()), email: Some("jamshaid.tahiri1@gmail.com".into()) ,age:Some("20".into()) }];
 //         Payment { customer_id: 3, amount: 4, account_name: Some("foo".into()) },
 //         Payment { customer_id: 5, amount: 6, account_name: None },
 //         Payment { customer_id: 7, amount: 8, account_name: None },
