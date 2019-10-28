@@ -690,19 +690,19 @@
 
 
 
-fn main() {
-//     // Iterators can be collected into vectors
-//     let a = [1, 2, 3];
+// fn main() {
+// //     // Iterators can be collected into vectors
+// //     let a = [1, 2, 3];
 
-// let mut iter = a.iter().map(|x| 2 * x);
+// // let mut iter = a.iter().map(|x| 2 * x);
 
-//     let collected_iterator: Vec<i32> = (0..10).collect();
-//     println!("Collected (0..10) into: {:?} \n {:?} \n {:?}", collected_iterator,iter.next(),iter.next());
+// //     let collected_iterator: Vec<i32> = (0..10).collect();
+// //     println!("Collected (0..10) into: {:?} \n {:?} \n {:?}", collected_iterator,iter.next(),iter.next());
 
-    // The `vec!` macro can be used to initialize a vector
-    let mut xs = vec![1i32, 2, 3];
+//     // The `vec!` macro can be used to initialize a vector
+//     let mut xs = vec![1i32, 2, 3];
     
-    println!("Initial vector: {:?}", xs[4]);
+//     println!("Initial vector: {:?}", xs[4]);
 
     // // Insert new element at the end of the vector
     // println!("Push 4 into the vector");
@@ -744,4 +744,30 @@ fn main() {
     //     *x *= 3;
     // }
     // println!("Updated vector: {:?}", xs);
+// }
+
+
+
+// #![allow(unused_variables)]
+// fn main() {
+// use std::collections::HashMap;
+
+// let anyvec = vec![1,2,1,3];
+
+// let mut map = HashMap::new();
+
+// for word in anyvec.iter() {
+//     let count = map.entry(word).or_insert(0);
+//     *count += 1;
+// }
+
+// println!("{:?}", map);
+// }
+
+
+fn main(){
+
+    let mut anyvec = vec![1,3,2,4];
+    anyvec.sort();
+    println!("{:?}",anyvec);
 }
